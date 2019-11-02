@@ -1,2 +1,7 @@
 # Utils
-All the files I expect to reuse amongst projects
+
+The following is a list of classes in this repository, with breif descriptions of what they are and how to use them.
+
+*Broadcaster.kt*: A Rx-like implementation of the broadcaster design pattern. Make sure to unsubscribe listeners.
+
+*SupervisorScope.kt*: A simple implementation of a `CoroutineScope`. Prefer instantiating as a global property, instead of constructor inject. A `CoroutineDispatcher` should be injected and used for its initialization.
